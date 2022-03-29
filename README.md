@@ -20,6 +20,7 @@ git branch "分支名稱" #產生分支
 git checkout "分支"
 git pull = git fetch(查看) + git merge (同步分支)
 
+git push --set-upstream origin "分支"
 ```
 
 ![/git_command_list.png](/Git/git_command_list.png)
