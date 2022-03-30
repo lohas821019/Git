@@ -23,6 +23,7 @@ git checkout "分支"
 git pull = git fetch(查看) + git merge (同步分支)
 
 git push --set-upstream origin "分支"
+git commit -am "message" (同時 add 以及commit)
 ```
 
 ![/git_command_list.png](/Git/git_command_list.png)
