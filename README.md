@@ -14,8 +14,8 @@ GitHub 是什麼？
 git config --list
 git status 
 
-git remote -v #查詢 origin url
-git remote set-url "別名" "url"
+git remote -v #查詢 origin url  ，確認目前Git遠端伺服器網址
+git remote set-url "別名" "url"  #更換Git遠端伺服器位網址
 git remote add "別名" "url"
 
 git branch "分支名稱" #產生分支
