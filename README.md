@@ -27,3 +27,7 @@ git commit -am "message" (同時 add 以及commit)
 ```
 
 ![/git_command_list.png](/Git/git_command_list.png)
+
+參考網站:
+
+https://www.mit.edu/~amidi/teaching/data-science-tools/study-guide/engineering-productivity-tips/#working-with-bash
