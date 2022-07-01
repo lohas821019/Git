@@ -24,7 +24,7 @@ git pull = git fetch(查看) + git merge (同步分支)
 
 git push --set-upstream origin "分支"
 git commit -am "message" (同時 add 以及commit)
-git clone -b <branchname> <remote-repo-url> 拉取特定分支
+git clone --branch <branchname> <remote-repo-url> 拉取特定分支
 ```
 
 ![/git_command_list.png](/Git/git_command_list.png)
