@@ -15,6 +15,8 @@ git config --list
 git status 
 
 git remote -v #查詢 origin url  ，確認目前Git遠端伺服器網址
+git remote add origin "repo的位置"
+
 git remote set-url "別名" "url"  #更換Git遠端伺服器位網址
 git remote add "別名" "url"
 
