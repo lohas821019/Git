@@ -36,6 +36,15 @@ git clone --branch <branchname> <remote-repo-url> 拉取特定分支
 [參考網站](https://www.mit.edu/~amidi/teaching/data-science-tools/study-guide/engineering-productivity-tips/#working-with-bash)
 
 
+設定auth
+```
+git help -a | grep credential
+
+git config --show-origin --get credential.helper
+
+```
+
+
 <br>
 
 # Git flow 
