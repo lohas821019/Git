@@ -40,7 +40,11 @@ git clone --branch <branchname> <remote-repo-url> 拉取特定分支
 ```
 git help -a | grep credential
 
+＃取得
 git config --show-origin --get credential.helper
+
+＃恢復
+git  config --global  credential.helper  osxkeychain
 
 ```
 
