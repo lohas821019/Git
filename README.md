@@ -11,6 +11,9 @@ GitHub 是什麼？
 
 
 ```
+git config --global user.name
+git config --global user.email
+
 git config --list
 git status 
 
