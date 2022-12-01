@@ -3,6 +3,9 @@
 Git 是什麼？
 一種版本控制的工具
 
+練習工具 
+https://learngitbranching.js.org/?locale=zh_TW
+
 GitHub 是什麼？
 一個網站。讓你放原始碼 (Source Code) 的空間，如果只需要放公開的程式碼，可以免費使用
 
@@ -32,7 +35,7 @@ git commit -am "message" (同時 add 以及commit)
 git clone --branch <branchname> <remote-repo-url> 拉取特定分支
 ```
 
-![/git_command_list.png](/resources/git_command_list.png)
+![/git_command_list.png](./resources/git_command_list.png)
 [參考網站](https://www.mit.edu/~amidi/teaching/data-science-tools/study-guide/engineering-productivity-tips/#working-with-bash)
 
 
@@ -53,7 +56,7 @@ git  config --global  credential.helper  osxkeychain
 
 # Git flow 
 
-![/git_command_list.png](/resources/flow.png)
+![/git_command_list.png](./resources/flow.png)
 
 Master 分支:
 
