@@ -3,6 +3,9 @@
 Git 是什麼？
 一種版本控制的工具
 
+練習工具 
+https://learngitbranching.js.org/?locale=zh_TW
+
 GitHub 是什麼？
 一個網站。讓你放原始碼 (Source Code) 的空間，如果只需要放公開的程式碼，可以免費使用
 
