@@ -14,20 +14,66 @@ GitHub 是什麼？
 
 
 ```
+//設定使用者名稱以及email
 git config --global user.name
 git config --global user.email
-
 git config --list
-git status 
 
+//比較常見的使用指令
+git status #查看版控狀態
+git add . #路徑下所有更改過的檔案加到準備存檔的狀態
+git commit -m "Hello, world!" (-m 代表的是message)
+git log #查看提交歷史紀錄
+git restore abc.txt #回復檔案的狀態
+git reset "commit hash" #回復到你要的存檔
+git reset --hard 讀取存檔之前的檔案,之後加的都不要留下來
+
+//可用doskey設定快捷鍵
+    (尚未使用)
+
+//分支相關
+git branch "分支名稱 "#創建分支
+git branch -D "分支名稱" #刪除分支
+git branch -r  #查看分支
+
+git checkout "分支名稱" #切換分支
+git checkout -b "分支名稱" #創造支縣,並切換過去
+git checkout - #快速在兩分支重複切換
+git merge "分支名稱" (在主線上用merge做合併,去合併分支)
+git merge "主線名稱" (分支上合併主線)
+:x #(確認合併與結束的指令)
+
+git cherry-pick "commit hash" 
+#選取你要添加的hash ,通常是修正有問題的commit,要照順序去pick
+
+git reflog #查看先前更動的動作 (f向上,b向下 搭配git reset --hard 使用)
+git stash #暫存目前工作
+git stash list #列出暫存目前工作
+git stash pop  #調出暫存的工作 (但會把stash list的存檔也消除掉)
+git stash save "fix bug ,later back " (暫存目前工作,並加說明)
+git stash apply "num" #從git stash list 可選出 (不會把stash list的存檔消除掉)
+
+
+//github相關
+git push --set-upstream origin "分支名稱" #將已存在的分支推送到github
+git push -u origin "分支名稱" (同上)
+
+//修復不小心把錯誤的代碼push在github上
+git revert  #git log 找出錯誤的commit 並在Vim的畫面輸入(:x!) 
+git rebase -i HEAD~數字 #commit 紀錄會很雜 ,所以透過rebase整理,在Vim的畫面 squash 取代pick
+git pull origin main #更新github上的分支,與他們的主線同步
+
+
+//merge conflicts 合併衝突
+
+
+
+
+//-------------------------------------------------------
 git remote -v #查詢 origin url  ，確認目前Git遠端伺服器網址
 git remote add origin "repo的位置"
-
 git remote set-url "別名" "url"  #更換Git遠端伺服器位網址
 git remote add "別名" "url"
-
-git branch "分支名稱" #產生分支
-git checkout "分支"
 git pull = git fetch(查看) + git merge (同步分支)
 
 git push --set-upstream origin "分支"
